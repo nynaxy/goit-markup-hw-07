@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile-first.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,6 +32,13 @@
                     <li><a href="tel:+110001111111" class="contact-data link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -392,6 +399,61 @@
             </form>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="close-button-menu js-close-menu">
+            <svg class="close-button-svg-menu" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <nav class="visuals-for-nav">
+            <ul class="mobile-menu list">
+                <li><a href="" class="mobile-menu-link link">Studio</a></li>
+                <li><a href="" class="mobile-menu-link link">Portfolio</a></li>
+                <li><a href="" class="mobile-menu-link link">Contacts</a></li>
+            </ul>
+        </nav>
+        <address class="mobile-menu-address">
+            <ul class="mobile-menu-contact list">
+                <li class="mobile-menu-contact-item">
+                    <a href="tel:+110001111111" class="mobile-menu-nr link">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-menu-contact-item">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu-contact-email link">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <ul class="menu-studio-socials-list list">
+            <li class="menu-studio-socials-item">
+                <a class="menu-studio-socials-link" href="">
+                    <svg class="menu-studio-socials-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="menu-studio-socials-item">
+                <a class="menu-studio-socials-link" href="">
+                    <svg class="menu-studio-socials-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-Group-6"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="menu-studio-socials-item">
+                <a class="menu-studio-socials-link" href="">
+                    <svg class="menu-studio-socials-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="menu-studio-socials-item">
+                <a class="menu-studio-socials-link" href="">
+                    <svg class="menu-studio-socials-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
