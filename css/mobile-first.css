@@ -34,6 +34,25 @@ body {
     background-color: #FFFFFF;
 } 
 @media screen and (max-width:428px) {
+.modal-contain {
+    position: absolute;
+        top: 50%;
+        left: 44%;
+        min-width: 300px;
+        min-height: 584px;
+        border-radius: 4px;
+        background-color: var(--color-DAIRY);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translate(-50%, -50%) scale(1);
+        padding: 72px 24px 24px 24px;
+}
+    .menu-studio-socials-list {
+        display: flex;
+            gap: 13px;
+            margin-top: 48px;
+            justify-content: space-around;
+}    
 .down {
         background-color: #2e2f42;
         padding: 96px 0;
@@ -148,6 +167,7 @@ body {
             border-radius: 4px;
             color: #ffffff;
             margin: 0px 15px;
+            width: 315px;
       }
 
     .sub-button {
@@ -195,7 +215,7 @@ body {
             align-items: center;
     }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width: 767px){
 .container {
         max-width: 428px;
         padding: 0 15px;
@@ -870,7 +890,7 @@ body {
         font-style: normal;
 }
 }
-@media screen and (min-width:481px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width:1199px) {
 .container {
         max-width: 768px;
         padding: 0 15px;
@@ -883,6 +903,8 @@ body {
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 1px 6px rgba(46, 47, 66, 0.08);
                 height: 70px;
+                display: flex;
+                align-items: center;
         }
 
         .header-visuals {
